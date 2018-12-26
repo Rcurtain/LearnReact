@@ -12,8 +12,22 @@
 <body>
     <div id="example"></div>
     <script type="text/babel">
+        
+        function ActionLink() {
+            function handleClick(e) {
+                e.preventDefault();
+                console.log('The link was clicked.');
+            }
+
+            return (
+                <a href="#" onClick={handleClick}>
+                    Click me
+                </a>
+            );
+        }
+        const element = <ActionLink />
         ReactDOM.render(
-            <h1>Hello, world!</h1>,
+            element,
             document.getElementById('example')
         );
     </script>
