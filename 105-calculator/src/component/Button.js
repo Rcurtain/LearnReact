@@ -21,7 +21,6 @@ class Button extends React.Component {
     );
   }
 }
-
 Button.propTypes = {
   name: PropTypes.string,
   orange: PropTypes.bool,
